@@ -1,4 +1,5 @@
 import { GraphQLClient, gql } from "graphql-request";
+import Menu from "../../components/menu";
 
 const clinet = new GraphQLClient(
   "https://api-ap-northeast-1.graphcms.com/v2/cl3r5o4vy8pmz01xi8szu1ly9/master"
@@ -52,16 +53,26 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Post({ post }) {
-  if(!post){
-      return <div>loading...</div>
+  if (!post) {
+    return <div>loading...</div>;
   }
   return (
-    <div className="blog">
-      <p>{post.title}</p>
-      <p>{post.datePublished}</p>
-      <p>By {post.author.name}</p>
-      <img src={post.coverImg.url} alt="" />
-      <p dangerouslySetInnerHTML={{ __html: post.content.html }}></p>
+    <div className="blog-wrapper">
+      <div className="blog">
+        <Menu />
+        <div className="blog-content">
+          <div className="title">{post.title}</div>
+
+          <div className="blog-author">
+            <img src={post.author.avatar.url} alt="" />
+            <div>
+              <div className="date">{post.datePublished}</div>
+              <div>By {post.author.name}</div>
+            </div>
+          </div>
+          <p dangerouslySetInnerHTML={{ __html: post.content.html }}></p>
+        </div>
+      </div>
     </div>
   );
 }

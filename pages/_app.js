@@ -1,6 +1,7 @@
 import {useState,useEffect} from 'react'
 import '../styles/globals.css'
 import '../styles/index.scss'
+import '../styles/blog.scss'
 
 function MyApp({ Component, pageProps }) {
   const [showChild,setShowChild]=useState(false)
