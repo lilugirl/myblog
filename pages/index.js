@@ -38,8 +38,9 @@ export async function getStaticProps() {
   const { posts } = await clinet.request(QUERY);
   return {
     props: {
-      posts,
+      posts,     
     },
+    revalidate:10
   };
 }
 
