@@ -20,7 +20,7 @@ export default function Article(){
         </div>
         <div className="blog-right-page-subtitle">
           Blonde received widespread acclaim, with critics praising
-          Ocean's introspective lyrics and the album's
+          Ocean&apos;s introspective lyrics and the album&apos;s
         </div>
       </div>
       <div className="blog-right-container">
@@ -59,7 +59,7 @@ export default function Article(){
         </div>
         <div className="blog-right-page-subtitle">
           Blonde received widespread acclaim, with critics praising
-          Ocean's introspective lyrics and the album's
+          Ocean&apos;s introspective lyrics and the album&apos;s
         </div>
       </div>
       <div className="blog-right-container">
@@ -68,7 +68,7 @@ export default function Article(){
           <div className="date">12.06.2021</div>
         </div>
         <div className="blog-right-page-title">
-          Elon Musk's SpaceX is launching a moon satellite
+          Elon Musk&apos;s SpaceX is launching a moon satellite
         </div>
         <div className="blog-right-page-subtitle">
           The interior concept was conceived of by Dutch archtitect
@@ -91,7 +91,7 @@ export default function Article(){
       <div className="circle">
         <div className="circle-title">Leave Your Old Life Behind</div>
         <div className="circle-subtitle">
-          Don't try to be like someone else, be yourself. Be secure with
+          Don&apos;t try to be like someone else, be yourself. Be secure with
           yourself.
         </div>
         <div className="circle-footer">Explore</div>
