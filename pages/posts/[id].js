@@ -1,4 +1,5 @@
 import { GraphQLClient, gql } from "graphql-request";
+import Editor from "../../components/editor";
 import Menu from "../../components/menu";
 
 const clinet = new GraphQLClient(
@@ -57,6 +58,7 @@ export default function Post({ post }) {
   if (!post) {
     return <div>loading...</div>;
   }
+  console.log('post',post)
   return (
     <div className="blog-wrapper">
       <div className="blog">
@@ -71,7 +73,9 @@ export default function Post({ post }) {
               <div>By {post.author.name}</div>
             </div>
           </div>
+         
           <p dangerouslySetInnerHTML={{ __html: post.content.html }}></p>
+          <Editor content={'console.log("hello world")'} />
         </div>
       </div>
     </div>

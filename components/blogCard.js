@@ -15,7 +15,7 @@ export default function BlogCard({post}){
        <span>{post.time}</span>
      </div>
      <p>{post.description}</p>
-     <a href={'/posts/'+post.id}>
+     <a href="#">
        <svg
          xmlns="http://www.w3.org/2000/svg"
          fill="none"
